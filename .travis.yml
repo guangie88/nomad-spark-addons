@@ -62,9 +62,9 @@ script:
     -t "${REF_IMAGE}"
 
 # Docker verification
-- |-
-  docker run --rm ${REF_IMAGE} \
-    spark-submit --version
+# - |-
+#   docker run --rm ${REF_IMAGE} \
+#     spark-submit --version
 
 # Docker re-tagging
 # Spark version is always unique across Nomad version, so all builds can tag and push independently
